@@ -54,7 +54,7 @@ namespace BookStore_management_curd.Controllers
             }
             catch (DataException)
             {
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+                ModelState.AddModelError("", "Unable to save changes");
             }
             return View(  bookstore);
 
@@ -77,7 +77,7 @@ namespace BookStore_management_curd.Controllers
             catch (DataException)
 
             {
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator."); 
+                ModelState.AddModelError("", "Unable to save changes"); 
 
 
             }
@@ -89,7 +89,7 @@ namespace BookStore_management_curd.Controllers
         {
             if (saveChangeError.GetValueOrDefault())
             {
-                ViewBag.ErrorMessage = " Unable to save changes.Try again, and if the problem persists see your system administrator.";
+                ViewBag.ErrorMessage = " Unable to save changes.";
             }
             bookstore book = _bookrepository.GetBookByID(id);
             return View (book);
