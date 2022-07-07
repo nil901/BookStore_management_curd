@@ -1,0 +1,44 @@
+﻿@model BookStore_management_curd.Models.bookstore
+
+<div>
+    <h4>bookstore</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Authers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Authers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.publishYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.publishYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BasePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BasePrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
