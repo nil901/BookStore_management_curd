@@ -13,7 +13,7 @@ namespace BookStore_management_curd.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202207070542446_user"; }
+            get { return "202207080340490_user "; }
         }
         
         string IMigrationMetadata.Source

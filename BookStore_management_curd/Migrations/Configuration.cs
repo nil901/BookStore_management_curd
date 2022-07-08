@@ -10,7 +10,6 @@ namespace BookStore_management_curd.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "BookStore_management_curd.Models.Context.ApplicationDbContext";
         }
 
         protected override void Seed(BookStore_management_curd.Models.Context.ApplicationDbContext context)

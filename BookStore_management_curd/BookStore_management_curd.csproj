@@ -126,13 +126,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202207070539024_InitialCreate.cs" />
-    <Compile Include="Migrations\202207070539024_InitialCreate.Designer.cs">
-      <DependentUpon>202207070539024_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202207070542446_user.cs" />
-    <Compile Include="Migrations\202207070542446_user.Designer.cs">
-      <DependentUpon>202207070542446_user.cs</DependentUpon>
+    <Compile Include="Migrations\202207080340490_user .cs" />
+    <Compile Include="Migrations\202207080340490_user .Designer.cs">
+      <DependentUpon>202207080340490_user .cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\bookstore.cs" />
@@ -183,11 +179,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202207070539024_InitialCreate.resx">
-      <DependentUpon>202207070539024_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202207070542446_user.resx">
-      <DependentUpon>202207070542446_user.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202207080340490_user .resx">
+      <DependentUpon>202207080340490_user .cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

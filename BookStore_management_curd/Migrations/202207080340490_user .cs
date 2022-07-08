@@ -3,7 +3,7 @@ namespace BookStore_management_curd.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class user : DbMigration
     {
         public override void Up()
         {
@@ -13,11 +13,11 @@ namespace BookStore_management_curd.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Title = c.String(nullable: false, maxLength: 30),
-                        Authers = c.String(),
-                        Year = c.String(),
+                        Authers = c.String(nullable: false),
+                        Year = c.String(nullable: false),
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
                     })
-                .PrimaryKey(t => t.Id);
+                  .PrimaryKey(t => t.Id);
             
         }
         
